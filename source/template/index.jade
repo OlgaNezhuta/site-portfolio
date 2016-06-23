@@ -1,0 +1,75 @@
+doctype html
+html
+  include common/_head
+  body
+    <!--[if lt IE 7]>
+    <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
+    <![endif]-->
+    a(href="#").btn-avt Авторизоваться
+    div.welcome-content
+        div.my-photo
+        div.my-name Ольга Нежута
+        div.phrase Личный сайт веб разработчика
+        ul.socials
+            li
+                a(href="#")
+                    svg.svg-vk-dims
+                        title Vkontakte
+                        use(xlink:href="assets/img/svg-sprite.svg#vk")
+            li 
+                a(href="#")
+                    svg.svg-github-dims
+                        title Github
+                        use(xlink:href="assets/img/svg-sprite.svg#github")
+            li 
+                a(href="#")
+                    svg.svg-in-dims
+                        title Linkedin
+                        use(xlink:href="assets/img/svg-sprite.svg#in")
+        ul.main-menu
+            li
+                a(href="#") Мои работы
+            li
+                a(href="#") Обо мне
+            li
+                a(href="#") Блог 
+    //div.content-avt
+        div.avt-word авторизуйтесь
+        div.avt-inputs
+            div.login
+                div.login-svg
+                    svg.svg-login-dims
+                        title Login
+                        use(xlink:href="assets/img/svg-sprite.svg#login")
+                input(type="text", value="", placeholder="Логин", class="avt-input")
+            div.password
+                div.password-svg
+                    svg.svg-password-dims
+                        title Password
+                        use(xlink:href="assets/img/svg-sprite.svg#password")
+                input(type="text", value="", placeholder="Пароль", class="avt-input password")
+            div.avt-checkbox
+                div.check-svg
+                    svg.svg-check-dims
+                        title Check
+                        use(xlink:href="assets/img/svg-sprite.svg#check")
+                div.check-phrase
+                    //input(type="checkbox") 
+                    Я человек
+            div.radiobutton-avt
+                div.robot-que
+                    Вы точно не робот?
+                div.robot-check
+                    input(type="radio", name="robot-check", value="0")
+                    Да
+                    input(type="radio", name="robot-check", value="0")
+                    Не уверен
+                
+        ul.main-menu.avt-menu
+           li
+                a(href="#") На главную
+            li
+                a(href="#") Войти 
+    footer.welcome-footer © Ольга Нежута | Создано с любовью в Loftschool | 2016
+        
+    
