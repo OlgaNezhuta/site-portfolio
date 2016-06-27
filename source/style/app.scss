@@ -1,4 +1,6 @@
 @import "common/svg-sprite.scss";
+@import "common/fonts.scss";
+
 
 html, body {
   height: 100%;
@@ -32,13 +34,32 @@ li {
     color: #FFF;
     display: inline-block;
     padding: 15px 29px;
-    font-family: Roboto;
+    font-family: roboto-regular;
     font-size: 16px;
     position: absolute;
     top: 24px;
     right: 20px;
+    transition: 1s;
 }
 
+.btn-auth:hover {
+    background-color: #F5F5F4;
+    opacity: 0.75;
+    color: #455a64;
+}
+
+/*.content-container {
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.content-container:hover {
+    transform: rotateY(180deg);
+}
+
+.content-auth {
+    backface-visibility: hidden;
+}*/
 
 .welcome-content, .content-auth {
     height: 395px;
@@ -56,7 +77,11 @@ li {
     height: 141px;
     width: 141px;
     margin: 40px auto;
-    background-color: antiquewhite;
+}
+
+.my-photo img {
+    height: 141px;
+    width: 141px;
     border-radius: 50%; 
 }
 
@@ -64,7 +89,7 @@ li {
     text-align: center;
     margin: -20px auto;
     color: #455a64;
-    font-family: Roboto;
+    font-family: roboto-regular;
     font-size: 28px;
 }
 
@@ -73,7 +98,7 @@ li {
     margin: 30px auto;
     opacity: 0.8;
     color: #455a64;
-    font-family: Roboto;
+    font-family: roboto-regular;
     font-size: 16px;
 }
 
@@ -89,6 +114,7 @@ li {
 .socials a {
     margin: 0 13px;
     fill: #00bfa5;
+    transition: 1s;
 }
 
 .socials a:hover {
@@ -113,10 +139,12 @@ li {
 }
 
 .main-menu a {
-    padding: 14px 33px;
+    padding: 0 30.5px;
+    display: block;
     color: white;
-    font-family: Roboto;
+    font-family: roboto-regular;
     font-size: 16px;
+    transition: 1s;
 }
 
 .main-menu a:hover {
@@ -134,7 +162,7 @@ li {
 
 .auth-word {
     color: #455a64;
-    font-family: BERNIERRegular;
+    font-family: bernier-regular;
     font-size: 35px;
     text-align: center;
     margin-top: 33px;
@@ -154,13 +182,17 @@ li {
     background-color: #FFF;
     border-radius: 4px;
     color: #373e42;
-    font-family: Roboto;
+    font-family: roboto-regular;
     font-size: 16px;
     padding: 0 221px 0 65px;
     box-sizing: border-box;
     margin-left: 20px;
     outline: none;
     border: 0;
+}
+
+.login, {
+    margin-bottom: 15px;
 }
 
 .login-svg, .password-svg {
@@ -172,8 +204,8 @@ li {
     fill: #c4cbcd;
 }
 
-.password-svg {
-    //margin-top: 40px;
+.password {
+    margin-bottom: 5px;
 }
 
 .auth-checkbox {
@@ -200,7 +232,7 @@ li {
     height: 13px;
     opacity: (0.8);
     color: #455a64;
-    font-family: Roboto;
+    font-family: roboto-regular;
     font-size: 16px;
 }
 
@@ -208,7 +240,7 @@ li {
     width: 149px;
     height: 17px;
     color: #455a64;
-    font-family: Roboto;
+    font-family: roboto-regular;
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
@@ -218,29 +250,47 @@ li {
 }
 
 .robot-check {
-    width: 215px;
+    width: 270px;
     margin: 0 auto;
     height: 16px;
     opacity: (0.8);
     color: #455a64;
-    font-family: Roboto;
+    font-family: roboto-regular;
     font-size: 16px;
     padding: 10px;
+    text-align: center;
 }
 
 .robot-check input {
-    margin-left: 40px;
+    display: none;
 }
 
-.robot-check-radio {
-    margin-right: 7px;
+.robot-check label {
+    margin-left: 20px;
 }
 
+/*.robot-check label {
+    display: inline-block;
+    background-color: blueviolet;
+    width: 20px;
+    height: 20px;
+}*/
+
+
+.robot-check input:checked + .answer span {
+    color: #00bfa5;
+}
+
+.radio-point span {
+    widows: 10px;
+    height: 10px;
+    background-color: white;
+}
 
 .welcome-footer {
     text-align: center;
     color: white;
-    font-family: Roboto;
+    font-family: roboto-regular;
     font-size: 16px;
     position: absolute;
     left: 0;

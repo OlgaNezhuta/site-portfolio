@@ -1,16 +1,33 @@
 doctype html
 
   
-- var mainMenu = ["Мои работы", "Обо мне", "Блог"]
-- var authMenu = ["На главную", "Войти"]
+- var mainMenu = [{url:'#', name:'Мои работы'}, {url:'#', name:'Обо мне'}, {url:'#', name:'Блог'}]
+- var authMenu = [{url:'#', name: 'На главную'}, {url:'#', name: 'Войти'}]
+- var socials = ['Vkontakte', 'Github', 'Linkedin']
+- var url = ['https://vk.com/id46384246', 'https://github.com/OlgaNezhuta', '#']
+- var svgName = ['vk', 'github', 'in']
+- var svgClass = ['svg-vk-dims', 'svg-github-dims', 'svg-in-dims']
   
 mixin menu(items)
     each item in items
-        li: a(href="#") #{item}
+        li: a(href="#{item.url}") #{item.name}
+
+//mixin svgList(items, className, active, url, svgName, svgClass)
+    ul(class="#{className}")
+        each item, key in items
+            if key == active
+                li(class="#{className}_item #{className}_item--active")
+                    a(href="#{url[key]}" class="#{className}_link" target="_blank")
+                        +svg('' + svgName[key], '' + svgClass[key], item)
+            else
+                li(class="#{className}_item")
+                    a(href="#{url[key]}" class="#{className}_link" target="_blank")
+                        +svg('' + svgName[key], '' + svgClass[key], item)
 
 html
     include common/_head
     include common/_welcome-page
+    include common/about-page/_about-page
     include common/_header
   body
     <!--[if lt IE 7]>
