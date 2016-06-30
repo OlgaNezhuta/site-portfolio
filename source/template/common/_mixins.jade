@@ -1,0 +1,24 @@
+- var mainMenu = [{url:'../build/works-page.html', name:'Мои работы'}, {url:'../build/about-page.html', name:'Обо мне'}, {url:'../build/blog-page.html', name:'Блог'}]
+//- var mainMenu = [{url:'http://ya.ru', name:'ya'}, {url:'build/pages/works-page.html', name:'Мои работы'}]
+
+- var authMenu = [{url:'#', name: 'На главную'}, {url:'#', name: 'Войти'}]
+- var socials = ['Vkontakte', 'Github', 'Linkedin']
+- var url = ['https://vk.com/id46384246', 'https://github.com/OlgaNezhuta', '#']
+- var svgName = ['vk', 'github', 'in']
+- var svgClass = ['svg-vk-dims', 'svg-github-dims', 'svg-in-dims']
+  
+mixin menu(items)
+    each item in items
+        li: a(href="#{item.url}") #{item.name}
+
+//mixin svgList(items, className, active, url, svgName, svgClass)
+    ul(class="#{className}")
+        each item, key in items
+            if key == active
+                li(class="#{className}_item #{className}_item--active")
+                    a(href="#{url[key]}" class="#{className}_link" target="_blank")
+                        +svg('' + svgName[key], '' + svgClass[key], item)
+            else
+                li(class="#{className}_item")
+                    a(href="#{url[key]}" class="#{className}_link" target="_blank")
+                        +svg('' + svgName[key], '' + svgClass[key], item)
