@@ -1,58 +1,95 @@
 body
+    include ../head
     include ../common/_header
+    include ../common/_mixins
+    
     
     .content-works
       .my-works-container
+        .works-svg
+            svg.svg-works_header-dims
+                title Works-header
+                use(xlink:href="assets/img/svg-sprite.svg#works_header")
         .my-works-title-container
           .phrase-line.phrase-line1
           .my-works-title Мои работы
           .phrase-line.phrase-line2
-      .works-school-site
-        .school-site-container
-          .school-site-title-container
-            .phrase-line.phrase-line3
-            .school-site-title Сайт школы онлайн образования
-            .phrase-line.phrase-line4
-          .container-technologies
-            .technologies HTML, CSS, Javacript
-          .school-site-btn
-            a(href='#')
-              .btn-text Посмотреть сайт
-      .works-slider
-        .slide.slide-down
-        .slide.slide-up
-      .talk-about-me
-        .about-me-block1
-          .about-me-title-container
-            .phrase-line.phrase-line1
-            .about-me-title Что обо мне говорят
-            .phrase-line.phrase-line2
-          .talk-block.block-kovalchuk
-            .talk-quotes “
-            .talk-text
-              | Эта девушка проходила обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
-            .talk-photo
-            .talk-photo-title
-              .title-name Ковальчук Дмитрий
-              .title-rank основатель Loftschool
-          .talk-block.block-zaharov
-            .talk-quotes “
-            .talk-text
-              | Этот код выдержет любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
-            .talk-photo
-            .talk-photo-title
-              .title-name Зар Захаров
-              .title-rank главный преподаватель
-        .about-me-block2
-          .works-form
-            .works-form-title-container
+      .works-school-site-container.clearfix
+        .works-school-site
+          .school-site-container
+            .school-site-title-container
+              .phrase-line.phrase-line3
+              .school-site-title Сайт школы онлайн образования
+              .phrase-line.phrase-line4
+            .container-technologies
+              .technologies HTML, CSS, Javacript
+            .school-site-btn
+              a(href='#')
+                .link-svg
+                    svg.svg-link-dims
+                        title Link
+                        use(xlink:href="assets/img/svg-sprite.svg#link")
+                .btn-text Посмотреть сайт
+        .works-slider
+          .slide.slide-down
+            .slide-arrow-svg
+                a(href="#")
+                    svg.svg-portf_arrow_down-dims
+                        title Portf-arrow-down
+                        use(xlink:href="assets/img/svg-sprite.svg#portf_arrow_down")
+          .slide.slide-up
+            .slide-arrow-svg
+                a(href="#")
+                    svg.svg-portf_arrow_up-dims
+                        title Portf-arrow-up
+                        use(xlink:href="assets/img/svg-sprite.svg#portf_arrow_up")
+      .talk-about-me.clearfix
+        img(src='../assets/img/1200/bg.png')
+        .talk-about-me-title-container
+          .about-me-svg
+            svg.svg-about_header-dims
+                title About-header
+                use(xlink:href="assets/img/svg-sprite.svg#about_header")
+          .phrase-line.phrase-line1
+          .talk-about-me-title Что обо мне говорят
+          .phrase-line.phrase-line2
+        .talks
+            .talk-block.block-kovalchuk.clearfix
+              .talk-quotes “
+              .talk-text
+                | Эта девушка проходила обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+              .talk-photo
+                img(src='../assets/img/1200/dima.png')
+              .talk-photo-title
+                .title-name Ковальчук Дмитрий
+                .title-rank основатель Loftschool
+            .talk-block.block-zaharov.clearfix
+              .talk-quotes “
+              .talk-text
+                | Этот код выдержет любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+              .talk-photo
+                img(src='../assets/img/1200/zar.png')
+              .talk-photo-title
+                .title-name Зар Захаров
+                .title-rank главный преподаватель
+        .works-form
+          .works-form-title-container
               .phrase-line.phrase-line3
               .works-form-title Связаться со мной
               .phrase-line.phrase-line4
-            .works-form-inputs-container
+          .works-form-inputs-container
               input.works-form-input(type='text', value='', placeholder='Имя')
               input.works-form-input.email(type='email', value='', placeholder='Email')
-              textarea.works-form-input.massege(placeholder='Ваше сообщение')
-
+              textarea.works-form-input.message(placeholder='Ваше сообщение')
+          .form-buttons
+            .btn-submit
+                button(type='submit') Отправить
+            .btn-reset
+                button(type='reset') Очистить
+        .arrow-up-svg
+            a(href="#")
+                svg.svg-arrow_down-dims
+                    title arrow-up
+                    use(xlink:href="assets/img/svg-sprite.svg#arrow_down")
     
     include ../common/_footer

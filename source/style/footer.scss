@@ -21,8 +21,13 @@
 
 .footer-high-list-link a {
 	color: white;
-	font-family: Roboto;
+	font-family: roboto-light;
 	font-size: 16px;
+}
+
+.footer-high-list li {
+    display: inline-block;
+	text-decoration: none;
 }
 
 .footer-low {
@@ -34,7 +39,7 @@
 	height: 41px;
 	opacity: 0.5;
 	color: white;
-	font-family: Roboto;
+	font-family: roboto-light;
 	font-size: 16px;
 	position: absolute;
 	left: 30px;
@@ -45,7 +50,7 @@
 .footer-low-phrase2 {
 	opacity: 0.5;
 	color: white;
-	font-family: Roboto;
+	font-family: roboto-light;
 	font-size: 16px;
 	position: absolute;
 	right: 32px;

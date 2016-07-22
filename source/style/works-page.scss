@@ -2,11 +2,30 @@ a {
 	text-decoration: none;
 }
 
+
+.content-works {
+    min-height: 2134px;
+    margin-bottom: -164px;
+    &:after {
+        content: '';
+        display: block;
+        height: 164px; 
+    }
+}
+
+.works-svg {
+    width: 100%;
+    text-align: center;
+    opacity: 0.07;
+    fill: #6e7171;
+}
+
 .my-works-container {
 	width: 100%;
 	height: 160px;
 	background: #faf8f0;
 	position: relative;
+    top: -148px;
 }
 
 .my-works-title-container {
@@ -21,7 +40,7 @@ a {
 	width: 420px;
 	height: 46px;
 	color: #373e42;
-	font-family: BERNIERRegular;
+	font-family: bernier-regular;
 	font-size: 63px;
 	line-height: 46px;
 	position: absolute;
@@ -46,8 +65,25 @@ a {
 	top: 20px;
 }
 
+.clearfix {
+
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
 .works-school-site, .works-slider {
 	float: left;
+}
+
+.works-school-site-container {
+    margin-top: -150px;
 }
 
 .works-school-site {
@@ -76,7 +112,7 @@ a {
 	width: 390px;
 	height: 41px;
 	color: #455a64;
-	font-family: BERNIERRegular;
+	font-family: bernier-regular;
 	font-size: 35px;
 	line-height: 41px;
 	position: absolute;
@@ -108,7 +144,7 @@ a {
 	height: 51px;
 	line-height: 51px;
 	color: #20b5a1;
-	font-family: Roboto;
+	font-family: roboto-light;
 	font-size: 16px;
 	text-align: center;
 
@@ -124,14 +160,21 @@ a {
 	left: 110px;
 }
 
+.link-svg {
+    position: absolute;
+    fill: white;
+    left: 18px;
+    top: 13px;
+}
+
 .btn-text {
 	width: 199px;
 	height: 45px;
 	color: white;
-	font-family: Roboto;
+	font-family: roboto-light;
 	font-size: 16px;
 	line-height: 45px;
-	text-align: center;
+    margin-left: 50px;
 }
 
 .works-slider {
@@ -159,46 +202,58 @@ a {
 	bottom: 0;
 }
 
-.about-me-block1 {
-	width: 100%;
-	height: 390px;
-	background: #fff;
-	position: absolute;
-	top: 920px;
+.slide-arrow-svg {
+    text-align: center;
+    margin-top: 100px;
+    fill: white;
 }
 
-.about-me-block2 {
-	width: 100%;
-	height: 914px;
-	background: #017f95;
-	position: absolute;
-	top: 1310px;
+.talk-about-me img {
+    width: 100%;
+    margin-top: -100px;
 }
 
-.about-me-title-container {
+.talk-about-me {
+    height: 1000px;
+}
+
+.about-me-svg {
+    width: 100%;
+    text-align: center;
+    opacity: 0.07;
+    fill: #6e7171;
+    margin-top: -50px;
+}
+
+.talk-about-me-title-container {
 	width: 420px;
 	height: 46px;
 	position: absolute;
-	top: 57px;
+	top: 1630px;
 	left: 425px;
 }
 
-.about-me-title {
+.talk-about-me-title {
 	width: 420px;
 	height: 46px;
 	color: #373e42;
-	font-family: BERNIERRegular;
+	font-family: bernier-regular;
 	font-size: 63px;
-	line-height: 46px;
+	line-height: 66px;
 	position: absolute;
+    top: -10px;
 	text-align: center;
 }
 
+.talks {
+    position: relative;
+    top: -1100px;
+    left: 250px;
+}
+
 .talk-block {
-	width: 365px;
+	width: 380px;
 	height: 232px;
-	border: 1px solid red;
-	margin-top: 206px;
 }
 
 .block-kovalchuk, .block-zaharov {
@@ -214,40 +269,43 @@ a {
 	height: 29px;
 	opacity: 0.2;
 	color: #373e42;
-	font-family: FontAwesome;
+	font-family: fontawesome-webfont;
 	font-size: 60px;
-	background: green;
 }
 
 .talk-text {
-	width: 363px;
+	width: 370px;
 	height: 66px;
 	color: #455a64;
-	font-family: Roboto;
+	font-family: roboto-light;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 26px;
 	margin-top: 20px;
+    padding-bottom: 30px;
 }
 
 .talk-photo {
 	width: 77px;
 	height: 77px;
 	border-radius: 50%;
-	background: red;
 	margin-bottom: 0;
+    background: white;
 }
 
 .talk-photo, .talk-photo-title {
 	float: left;
 }
 
+.talk-photo img {
+	margin-top: 0;
+}
 
 .talk-photo-title {
-	width: 166px;
+	width: 180px;
 	height: 37px;
 	color: #20b5a1;
-	font-family: Roboto;
+	font-family: roboto-light;
 	font-size: 16px;
 	line-height: 24px;
 	margin-left: 22px;
@@ -265,10 +323,12 @@ a {
 .works-form {
 	width: 380px;
 	height: 437px;
-	background: pink;
+	background: #999;
 	border-radius: 1%;
 	margin: 100px auto;
 	position: relative;
+    top: -870px;
+    
 }
 
 .works-form-title-container {
@@ -280,15 +340,15 @@ a {
 }
 
 .works-form-title {
-	width: 280px;
+    width: 350px;
+    text-align: center;
 	height: 33px;
 	color: #455a64;
-	font-family: BERNIERRegular;
+	font-family: bernier-regular;
 	font-size: 35px;
 	font-weight: 400;
 	line-height: 33px;
 	position: absolute;
-	left: 35px;
 }
 
 .works-form-inputs-container {
@@ -314,12 +374,63 @@ a {
     border: 0;
 }
 
-.email, .massege {
+.email, .message {
 	margin-top: 20px;
 }
 
-.massege {
+.message {
 	height: 140px;
 	padding-top: 15px;
+}
+
+.form-buttons {
+    position: absolute;
+    bottom: 0;
+}
+
+.btn-submit, .btn-reset {
+    display: inline-block;
+}
+
+.btn-submit button, .btn-reset button {
+    height: 45px;
+    width: 187.7px;
+    background-color: #00bfa5;
+    color: white;
+    font-family: roboto-regular;
+    font-size: 16px;
+    transition: 1s;
+    border-style: none;
+    outline: none;
+    cursor: pointer;
+    &:hover {
+        background: #22a196;
+    }
+}
+
+.btn-submit button {
+    border-bottom-left-radius: 5%;
+}
+
+.btn-reset button {
+    border-bottom-right-radius: 5%;
+}
+
+.arrow-up-svg {
+    width: 100%;
+    text-align: center;
+    margin-top: -870px;
+    transform: rotate(180deg);
+}
+
+.arrow-up-svg a {
+    width: 15px;
+    height: 15px;
+    fill: white;
+    opacity: 0.7;
+}
+
+.triangle-works {
+    //fill: #faf8f0;
 }
 

@@ -2,11 +2,38 @@ li {
 	list-style: none;
 }
 
+
+.blog-container {
+    //position: relative;
+    background: white;
+    top: -148px;
+    min-height: 2964px;
+    margin-bottom: -164px;
+    &:after {
+        content: '';
+        display: block;
+        height: 164px; 
+    }
+}
+
+.clearfix {
+
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
 .articles-list-item {
 	width: 246px;
 	height: 40px;
 	color: #455a64;
-	font-family: Roboto;
+	font-family: roboto-light;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 26px;
@@ -23,17 +50,22 @@ li {
 	float: left;
 }
 
+.blog-container-nav {
+    margin-top: 60px;
+}
+
 .blog-container-content {
-	height: 1300px;
+	height: 1400px;
 	width: 675px;
 	margin-left: 100px;
+    margin-top: 60px;
 }
 
 .first-article-title {
 	width: 330px;
 	min-height: 27px;
 	color: #455a64;
-	font-family: BERNIERRegular;
+	font-family: bernier-regular;
 	font-size: 35px;
 	font-weight: 400;
 	line-height: 41px;
@@ -44,7 +76,7 @@ li {
 	height: 17px;
 	opacity: 0.7;
 	color: #00bfa5;
-	font-family: Roboto;
+	font-family: roboto-light;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 41px;
@@ -55,10 +87,11 @@ li {
 	width: 675px;
 	height: 391px;
 	color: #455a64;
-	font-family: Roboto;
+	font-family: roboto-light;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 26px;
+    margin-bottom: 50px;
 }
 
 .first-article-code {
@@ -78,4 +111,41 @@ li {
 .second-article-title {
 	width: 603px;
 }
+
+.triangle-blog {
+    //fill: white;
+}
+
+
+.menu_wrapper {
+  position: relative;
+  height: 1px;
+}
+
+.menu {
+  padding-right: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0; 
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; 
+}
+
+.left_col {
+  width: 30%;
+  float: left;
+  height: 1px;
+}
+
+.right_col {
+  width: 60%;
+  float: left;
+}
+
 

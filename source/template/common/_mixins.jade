@@ -20,3 +20,27 @@ mixin menu(items)
                 li(class="#{className}_item")
                     a(href="#{url[key]}" class="#{className}_link" target="_blank")
                         +svg('' + svgName[key], '' + svgClass[key], item)
+
+mixin preloader
+    .preloader
+        .preloader-background
+          img(src='../assets/img/preloader_mountains/bg.jpg')
+        .preloader-svg
+            svg.mountains-animation(x='0px', y='0px', width='144px', height='144px', viewbox='0 0 144 144', enable-background='new 0 0 144 144', xml:space='preserve')
+                circle.outer.circle(opacity='0.4', fill='none', stroke='#FFF', stroke-width='4', stroke-miterlimit='10', enable-background='new', stroke-dasharray='0 439', cx='72', cy='71.999', r='70')
+                circle.middle.circle(opacity='0.7', fill='none', stroke='#FFF', stroke-width='3.8938', stroke-miterlimit='10', enable-background='new', stroke-dasharray='0 345', cx='72', cy='72', r='55')
+                circle.inner.circle(fill='none', stroke='#FFF', stroke-width='4', stroke-miterlimit='10', stroke-dasharray='0 251', cx='72', cy='72', r='40')
+                text.round-text(transform='matrix(1 0 0 1 51.5391 79.0127)', fill='#FFF', font-family="'ArialMT'", font-size='24') 
+                
+                
+mixin hamburger
+    .hamburger
+        a(href='#')
+          .hamburger-line.hamburger-line1
+          .hamburger-line.hamburger-line2
+          .hamburger-line.hamburger-line3             
+                
+                
+                
+                
+                

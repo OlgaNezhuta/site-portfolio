@@ -1,0 +1,79 @@
+.preloader-background img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.preloader-svg {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.mountains-animation circle {
+  transform-origin: 50%;
+}
+
+.round-text {
+    stroke: white;
+}
+
+.inner {
+  transform: rotate(-90deg);
+  animation: moving-inner-circle 3s;
+  -webkit-animation: moving-inner-circle 3s;
+}
+
+.middle {
+  transform: rotate(-120deg);
+  -webkit-animation: moving-middle-circle 3s;
+  -webkit-animation-delay: 0.5s; 
+}
+
+.outer {
+  transform: rotate(-150deg);
+  -webkit-animation: moving-outer-circle 3s;
+  -webkit-animation-delay: 1s; 
+}
+
+.circle {
+  animation-iteration-count: infinite;
+    stroke: white;
+}
+
+@-webkit-keyframes moving-inner-circle {
+  from {
+    stroke-dasharray: 0 251;
+    }
+  to {
+    stroke-dasharray: 251 251;
+  }
+}
+
+.loaded {
+@-webkit-keyframes moving-middle-circle {
+  from {
+    stroke-dasharray: 0 345;
+    }
+  to {
+    stroke-dasharray: 345 345;
+  }
+}
+}
+
+    
+@-webkit-keyframes moving-outer-circle {
+  from {
+    stroke-dasharray: 0 440;
+    }
+  to {
+    stroke-dasharray: 439 439;
+  }
+}

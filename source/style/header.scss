@@ -1,7 +1,68 @@
 .header-background img {
 	width: 100%;
-	height: 612px;
+	height: 740px;
 	position: relative;
+}
+
+.portfolio-svg {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 150px;
+    opacity: 0.1;
+    fill: white;
+}
+
+.my-block-container {
+    height: 250px;
+    width: 300px;
+    position: absolute;
+    top: 153px;
+    left: 500px;
+}
+
+.my-photo-header {
+    height: 141px;
+    width: 141px;
+    margin: 0 auto;
+}
+
+.my-photo-header img {
+    height: 141px;
+    width: 141px;
+    border-radius: 50%; 
+}
+
+.my-name-header {
+    text-align: center;
+    margin: 10px auto;
+    color: white;
+    font-family: roboto-regular;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.phrase-header {
+    text-align: center;
+    margin: 0 auto;
+    opacity: 0.5;
+    color: white;
+    font-family: roboto-light;
+    font-size: 16px;
+}
+
+.arrow-down-svg {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 70px;
+}
+
+.arrow-down-svg a {
+    width: 15px;
+    height: 15px;
+    fill: white;
+    opacity: 0.7;
 }
 
 .hamburger {
@@ -12,21 +73,22 @@
 	right: 30px;
 }
 
-.hambuger-line {
+.hamburger-line {
 	width: 40px;
 	height: 4px;
 	border-radius: 15%;
 	background: white;
 	margin-bottom: 11px;
+    transition: all .3s;
 }
 
 .box {
-  margin: 50px auto;
+    margin: 50px auto;
 }
 
 .triangle {
   position: absolute;
-  top: 511px;
+  top: 533px;
 }
 
 .triangle1 {
@@ -36,3 +98,76 @@
 .triangle2 {
 	fill: #eeebdf;
 }
+
+/*     drop-down-menu       */
+
+.drop-down-menu {
+    width: 100%;
+	height: 740px;
+	position: absolute;
+    background: #00bfa5;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.drop-down-list {
+    width: 200px;
+    height: 200px;
+    margin: 150px auto;
+}
+
+.drop-down-list-item a {
+    font-family: bernier-regular;
+	font-size: 35px;
+    color: white;
+}
+
+
+.drop-down-list-item {
+    text-align: center;
+    padding-bottom: 50px;
+//    &:hover {
+//    .phrase-line-drop-down {
+//	    width: 22px;
+//	    height: 5px;
+//	    opacity: 0.2;
+//	    background-color: #373e42;
+//	    position: absolute;
+//        }
+//    }
+}
+
+.hamburger-active {
+    margin-top: 18px;
+    .hamburger-line1 {
+        transform: rotate(-45deg);
+        transition: all .3s;
+        position: absolute;
+    }
+    .hamburger-line2 {
+        display: none;
+        transition: all .3s;
+    }
+    .hamburger-line3 {
+        transform: rotate(45deg);
+        transition: all .3s;
+    }
+}
+
+.drop-down-menu-hidden {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
