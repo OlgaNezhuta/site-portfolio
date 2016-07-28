@@ -1,67 +1,68 @@
 body
     include ../head
-    include ../common/_header
-    include ../common/_mixins
+    .container-about-page
+        include ../common/_header
+        include ../common/_mixins
+        
+        .content-about.clearfix
+          .about-me
+            .about-svg
+                svg.svg-about_header-dims
+                    title About-header
+                    use(xlink:href="assets/img/svg-sprite.svg#about_header")
+            .about-me-title-container
+              .phrase-line.phrase-line1
+              .about-me-title Обо мне
+              .phrase-line.phrase-line2
+            .about-me-photo
+            .about-me-text-title-container
+              .phrase-line.phrase-line3
+              .about-me-text-title Кто я
+              .phrase-line.phrase-line4
+            .about-me-text
+              p
+                | Я веб разработчик из Днепропетровска. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+              p
+                | Этот сайт я сделала в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+          .about-skills
+            .about-skills-title-container
+              .phrase-line.phrase-line3
+              .about-skills-text-title Чем я могу быть вам полезна
+              .phrase-line.phrase-line4
+            .about-skills-text
+              | Больше всего меня привлекет Frontend разработка, но я также знакома и могу решать не сложные задачи на Backend. Но давайте по порядку.
+          .content-about-map
+            iframe(src='https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d48578.48184890806!2d34.976007124426644!3d48.467678953832184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1468872720995', width='1400', height='973', frameborder='0', style='border:0', allowfullscreen='')
+            .contacts-list-container
+              .contacts-list-title-container
+                .phrase-line.phrase-line3
+                .contacts-list-title Контакты
+                .phrase-line.phrase-line4
+              ul.contacts-list.clearfix
+                li
+                    a(href="#").contacts-list-svg
+                        svg.svg-skype-dims
+                            title Skype
+                            use(xlink:href="assets/img/svg-sprite.svg#skype")
+                    .contacts-list-text Ольга Нежута
+                li
+                    a(href="#").contacts-list-svg
+                        svg.svg-envelope-dims
+                            title Skype
+                            use(xlink:href="assets/img/svg-sprite.svg#envelope") 
+                    .contacts-list-text vzdya@yandex.ru
+                li 
+                    a(href="#").contacts-list-svg
+                        svg.svg-phone-dims
+                            title Phone
+                            use(xlink:href="assets/img/svg-sprite.svg#phone") 
+                    .contacts-list-text +38XXXXXXXXXX
+                li 
+                    a(href="#").contacts-list-svg
+                        svg.svg-map_marker-dims
+                            title Map-marker
+                            use(xlink:href="assets/img/svg-sprite.svg#map_marker") 
+                    .contacts-list-text г. Днепр, ул. Метростроевская, д. 5
     
-    .content-about.clearfix
-      .about-me
-        .about-svg
-            svg.svg-about_header-dims
-                title About-header
-                use(xlink:href="assets/img/svg-sprite.svg#about_header")
-        .about-me-title-container
-          .phrase-line.phrase-line1
-          .about-me-title Обо мне
-          .phrase-line.phrase-line2
-        .about-me-photo
-        .about-me-text-title-container
-          .phrase-line.phrase-line3
-          .about-me-text-title Кто я
-          .phrase-line.phrase-line4
-        .about-me-text
-          p
-            | Я веб разработчик из Днепропетровска. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
-          p
-            | Этот сайт я сделала в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
-      .about-skills
-        .about-skills-title-container
-          .phrase-line.phrase-line3
-          .about-skills-text-title Чем я могу быть вам полезна
-          .phrase-line.phrase-line4
-        .about-skills-text
-          | Больше всего меня привлекет Frontend разработка, но я также знакома и могу решать не сложные задачи на Backend. Но давайте по порядку.
-      .content-about-map
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d48578.48184890806!2d34.976007124426644!3d48.467678953832184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1468872720995" width="1400" height="973" frameborder="0" style="border:0" allowfullscreen></iframe>
-        .contacts-list-container
-          .contacts-list-title-container
-            .phrase-line.phrase-line3
-            .contacts-list-title Контакты
-            .phrase-line.phrase-line4
-          ul.contacts-list.clearfix
-            li
-                a(href="#").contacts-list-svg
-                    svg.svg-skype-dims
-                        title Skype
-                        use(xlink:href="assets/img/svg-sprite.svg#skype")
-                .contacts-list-text Ольга Нежута
-            li
-                a(href="#").contacts-list-svg
-                    svg.svg-envelope-dims
-                        title Skype
-                        use(xlink:href="assets/img/svg-sprite.svg#envelope") 
-                .contacts-list-text vzdya@yandex.ru
-            li 
-                a(href="#").contacts-list-svg
-                    svg.svg-phone-dims
-                        title Phone
-                        use(xlink:href="assets/img/svg-sprite.svg#phone") 
-                .contacts-list-text +38XXXXXXXXXX
-            li 
-                a(href="#").contacts-list-svg
-                    svg.svg-map_marker-dims
-                        title Map-marker
-                        use(xlink:href="assets/img/svg-sprite.svg#map_marker") 
-                .contacts-list-text г. Днепр, ул. Метростроевская, д. 5
-
-    
-    include ../common/_footer
+        
+        include ../common/_footer

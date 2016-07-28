@@ -208,6 +208,11 @@ a {
     fill: white;
 }
 
+.slide-arrow-svg a {
+    fill: white;
+    height: 30px;
+}
+
 .talk-about-me img {
     width: 100%;
     margin-top: -100px;
@@ -269,7 +274,7 @@ a {
 	height: 29px;
 	opacity: 0.2;
 	color: #373e42;
-	font-family: fontawesome-webfont;
+    font-family: 'fontawesome-webfont';
 	font-size: 60px;
 }
 
@@ -323,20 +328,35 @@ a {
 .works-form {
 	width: 380px;
 	height: 437px;
-	background: #999;
-	border-radius: 1%;
-	margin: 100px auto;
+//    top: 50%;
+//    left: 50%;
+//    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-radius: 3%;
+	margin: 0 auto;
 	position: relative;
-    top: -870px;
-    
+    //top: -870px;
+    margin-top: -800px;
 }
 
-.works-form-title-container {
+.blur_form {
+    width: 100%;
+    height: 100%;
+    filter: blur(20px);
+    -webkit-filter: blur(20px);
+    background-image: url("/assets/img/1200/bg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.form {
+    .works-form-title-container {
 	position: absolute;
 	width: 350px;
 	height: 33px;
 	top: 30px;
 	left: 15px;
+    }
 }
 
 .works-form-title {
@@ -419,18 +439,21 @@ a {
 .arrow-up-svg {
     width: 100%;
     text-align: center;
-    margin-top: -870px;
+    margin-top: 120px;
     transform: rotate(180deg);
 }
 
 .arrow-up-svg a {
     width: 15px;
     height: 15px;
-    fill: white;
     opacity: 0.7;
+    fill: white;
 }
 
-.triangle-works {
-    //fill: #faf8f0;
+
+.container-works-page {
+    .triangle-works {
+        fill: #faf8f0;
+    }
 }
 

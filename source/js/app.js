@@ -135,58 +135,58 @@
 /*       blog-page-block       */
 
 
-(function() {
-    $(window).scroll(function() {
-        var wScroll = $(window).scrollTop(),
-            menu = $('.static .menu'),
-            sidebar = $('.static .menu_wrapper '),
-            stickyStart = sidebar.offset().top,
-            menuClone = sidebar.clone(),
-            fixedSidebar = $('.fixed .left_col');
+//(function() {
+//    $(window).scroll(function() {
+//        var wScroll = $(window).scrollTop(),
+//            menu = $('.static .menu'),
+//            sidebar = $('.static .menu_wrapper '),
+//            stickyStart = sidebar.offset().top,
+//            menuClone = sidebar.clone(),
+//            fixedSidebar = $('.fixed .left_col');
+//        
+//        if (wScroll >= stickyStart) {
+//
+//
+//		  if (!fixedSidebar.find('.menu_wrapper').length) {
+//		  	fixedSidebar.append(menuClone);
+//            menu.hide();
+//		  }
+//
+//
+//	   } else {
+//	   	   fixedSidebar.find('.menu_wrapper').remove();
+//	   	   menu.show();
+//	   }
         
-        if (wScroll >= stickyStart) {
-
-
-		  if (!fixedSidebar.find('.menu_wrapper').length) {
-		  	fixedSidebar.append(menuClone);
-            menu.hide();
-		  }
-
-
-	   } else {
-	   	   fixedSidebar.find('.menu_wrapper').remove();
-	   	   menu.show();
-	   }
-        
 
         
         
-        function addActiveClass() {
-            $('.article-container').each(function() {
-                var $this = $(this),
-                    topEdge = $this.offset().top,
-                    bottomEdge = topEdge + $this.height(),
-                    wScroll = $(window).scrollTop();
-                
-                if (topEdge < wScroll && bottomEdge > wScroll) {
-                    $('.menu').each(function(){
-                       $('.menu li').closest('.articles-list-item').addClass('articles-list-item-active')
-                            //.siblings().removeClass('articles-list-item-active');
-                       });
-
-                            console.log(wScroll);
-                    
-                    } if (topEdge < wScroll && bottomEdge < wScroll) {
-                         $('.menu li').closest('.articles-list-item').removeClass('articles-list-item-active')
-                            //.siblings().removeClass('articles-list-item-active');
-                    }
-
-            
-                });
-        }
-        
-        addActiveClass();
-        
+//        function addActiveClass() {
+//            $('.article-container').each(function() {
+//                var $this = $(this),
+//                    topEdge = $this.offset().top,
+//                    bottomEdge = topEdge + $this.height(),
+//                    wScroll = $(window).scrollTop();
+//                
+//                if (topEdge < wScroll && bottomEdge > wScroll) {
+//                    $('.menu').each(function(){
+//                       $('.menu li').closest('.articles-list-item').addClass('articles-list-item-active')
+//                            //.siblings().removeClass('articles-list-item-active');
+//                       });
+//
+//                            console.log(wScroll);
+//                    
+//                    } if (topEdge < wScroll && bottomEdge < wScroll) {
+//                         $('.menu li').closest('.articles-list-item').removeClass('articles-list-item-active')
+//                            //.siblings().removeClass('articles-list-item-active');
+//                    }
+//
+//            
+//                });
+//        }
+//        
+//        addActiveClass();
+//        
 //        function addActiveClass() {
 //            $('.article-container').each(function(){
 //                var $this = $(this),
@@ -220,8 +220,50 @@
 //        
 //        addActiveClass();
     
-    });
-})();  
+//    });
+//})();  
+
+
+
+/*      works-page-block     */
+/*     blur        */
+
+
+//$(document).ready(function(){
+//	setBlur();
+//}); 
+//
+//$(window).resize(function(){
+//	setBlur();
+//});
+//
+//function setBlur() {
+//	var
+//		imgWidth = $('.blur_background').width(),
+//		blur = $('.blur_form'),
+//		blurSection = $('.blur'),
+//		posTop = blurSection.offset().top - blur.offset().top,
+//		posLeft = blurSection.offset().left - blur.offset().left;
+//
+//	blur.css({
+//		'background-size' : imgWidth + 'px' + ' ' + 'auto',
+//		'background-position' : posLeft + 'px' + ' ' + posTop + 'px'
+//	});
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

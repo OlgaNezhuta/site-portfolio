@@ -2,7 +2,7 @@ html
   body
     include ../common/_mixins
     
-    +preloader
+    //+preloader
     header.header              
       .header-background
         img(src='../assets/img/1200/welcome1200.jpg')
@@ -15,28 +15,30 @@ html
                 img(src="../assets/img/1200/my-photo.jpg", alt="Olga Nezhuta")
             .my-name-header Ольга Нежута
             .phrase-header Личный сайт веб разработчика
-      .arrow-down-svg
-        a(href="#")
-            svg.svg-arrow_down-dims
-                title arrow-down
-                use(xlink:href="assets/img/svg-sprite.svg#arrow_down")
       +hamburger
       .box
         svg.triangle.triangle1.triangle-works.triangle-blog(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 1000 85', preserveaspectratio='none')
           polygon(points='0,0   0,86   500.8,86   500.8,75.5')
         svg.triangle.triangle2.triangle-works.triangle-blog(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 1000 85', preserveaspectratio='none')
           polygon(points='1000,0   1000,86   500,86   500,75.5')   
-        .drop-down-menu.drop-down-menu-hidden
+        .arrow-down-svg
+          a(href="#")
+              svg.svg-arrow_down-dims
+                  title arrow-down
+                  use(xlink:href="assets/img/svg-sprite.svg#arrow_down")
+      .drop-down-menu.drop-down-menu-hidden
+        .drop-down-left
+        .drop-down-right
             +hamburger
             ul.drop-down-list
                 li.drop-down-list-item
-                     a(href='works-page.html') Мои работы
+                        a(href='works-page.html') Мои работы
                 li.drop-down-list-item
-                     a(href='about-page.html') Обо мне
+                        a(href='about-page.html') Обо мне
                 li.drop-down-list-item
-                     a(href='blog-page.html') Блог
+                        a(href='blog-page.html') Блог
                 li.drop-down-list-item
-                     a(href='#') Авторизация
+                        a(href='/') Авторизация
                      
                      
                      
