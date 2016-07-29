@@ -40,7 +40,7 @@ a {
 	width: 420px;
 	height: 46px;
 	color: #373e42;
-	font-family: bernier-regular;
+	font-family: 'bernier-regular';
 	font-size: 63px;
 	line-height: 46px;
 	position: absolute;
@@ -112,7 +112,7 @@ a {
 	width: 390px;
 	height: 41px;
 	color: #455a64;
-	font-family: bernier-regular;
+	font-family: 'bernier-regular';
 	font-size: 35px;
 	line-height: 41px;
 	position: absolute;
@@ -144,7 +144,7 @@ a {
 	height: 51px;
 	line-height: 51px;
 	color: #20b5a1;
-	font-family: roboto-light;
+	font-family: 'roboto-light';
 	font-size: 16px;
 	text-align: center;
 
@@ -171,7 +171,7 @@ a {
 	width: 199px;
 	height: 45px;
 	color: white;
-	font-family: roboto-light;
+	font-family: 'roboto-light';
 	font-size: 16px;
 	line-height: 45px;
     margin-left: 50px;
@@ -242,7 +242,7 @@ a {
 	width: 420px;
 	height: 46px;
 	color: #373e42;
-	font-family: bernier-regular;
+	font-family: 'bernier-regular';
 	font-size: 63px;
 	line-height: 66px;
 	position: absolute;
@@ -274,7 +274,8 @@ a {
 	height: 29px;
 	opacity: 0.2;
 	color: #373e42;
-    font-family: 'fontawesome-webfont';
+    //font-family: 'fontawesome-webfont';
+    font-family: 'font-awesome';
 	font-size: 60px;
 }
 
@@ -282,7 +283,7 @@ a {
 	width: 370px;
 	height: 66px;
 	color: #455a64;
-	font-family: roboto-light;
+	font-family: 'roboto-light';
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 26px;
@@ -310,7 +311,7 @@ a {
 	width: 180px;
 	height: 37px;
 	color: #20b5a1;
-	font-family: roboto-light;
+	font-family: 'roboto-light';
 	font-size: 16px;
 	line-height: 24px;
 	margin-left: 22px;
@@ -332,10 +333,9 @@ a {
 //    left: 50%;
 //    transform: translate(-50%, -50%);
     overflow: hidden;
-    border-radius: 3%;
+    border-radius: 1%;
 	margin: 0 auto;
 	position: relative;
-    //top: -870px;
     margin-top: -800px;
 }
 
@@ -349,7 +349,7 @@ a {
     background-repeat: no-repeat;
 }
 
-.form {
+//.works-form {
     .works-form-title-container {
 	position: absolute;
 	width: 350px;
@@ -357,14 +357,14 @@ a {
 	top: 30px;
 	left: 15px;
     }
-}
+//}
 
 .works-form-title {
     width: 350px;
     text-align: center;
 	height: 33px;
 	color: #455a64;
-	font-family: bernier-regular;
+	font-family: 'bernier-regular';
 	font-size: 35px;
 	font-weight: 400;
 	line-height: 33px;
@@ -384,7 +384,7 @@ a {
     background-color: #FFF;
     border-radius: 4px;
     color: #373e42;
-    font-family: roboto-regular;
+    font-family: 'roboto-regular';
     font-size: 16px;
     padding-left: 20px;
     padding-right: 15px;
@@ -417,7 +417,7 @@ a {
     width: 187.7px;
     background-color: #00bfa5;
     color: white;
-    font-family: roboto-regular;
+    font-family: 'roboto-regular';
     font-size: 16px;
     transition: 1s;
     border-style: none;
