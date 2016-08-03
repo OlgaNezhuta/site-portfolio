@@ -4,15 +4,14 @@ li {
 
 
 .blog-container {
-    //position: relative;
-    background: white;
-    //top: -148px;
-    min-height: 2964px;
-    margin-bottom: -164px;
+//    position: relative;
+//    top: -355px;
+    min-height: 2564px;
+    margin-bottom: -162px;
     &:after {
         content: '';
         display: block;
-        height: 164px; 
+        height: 162px; 
     }
 }
 
@@ -55,7 +54,6 @@ li {
 }
 
 .blog-container-content {
-	height: 1400px;
 	width: 675px;
 	margin-left: 100px;
     margin-top: 60px;

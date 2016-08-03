@@ -42,7 +42,7 @@ a {
 }
 
 .about-me {
-	height: 830px;
+	min-height: 830px;
 	width: 50%;
 	background: #efeee9;
 	position: relative;
@@ -51,8 +51,9 @@ a {
 .about-me-title-container {
 	position: absolute;
 	width: 300px;
+    margin: 0 25%;
 	height: 46px;
-	left: 150px;
+	//left: 150px;
 	top: 40px;
 }
 
@@ -126,7 +127,7 @@ a {
 
 .about-me-text {
 	width: 414px;
-	height: 195px;
+	min-height: 195px;
 	color: #455a64;
 	font-family: roboto-light;
 	font-size: 16px;
@@ -137,7 +138,7 @@ a {
 }
 
 .about-skills {
-	height: 830px;
+	min-height: 830px;
 	width: 50%;
 	background: #eeebdf;
 	position: relative;
@@ -152,9 +153,9 @@ a {
 }
 
 .about-skills-text-title {
-	width: 250px;
+	max-width: 250px;
     text-align: center;
-	height: 26px;
+	min-height: 26px;
 	line-height: 41px;
 	color: #455a64;
 	font-family: bernier-regular;
@@ -166,7 +167,7 @@ a {
 
 .about-skills-text {
 	width: 532px;
-	height: 41px;
+	min-height: 41px;
 	color: #455a64;
 	font-family: roboto-light;
 	font-size: 16px;
@@ -194,8 +195,9 @@ a {
 	background-color: #fcfcfc;
 	border-radius: 5px;
 	position: absolute;
-	top: 347px;
-	left: 420px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .contacts-list-title-container {

@@ -32,13 +32,26 @@ body
                             use(xlink:href="assets/img/svg-sprite.svg#link")
                     .btn-text Посмотреть сайт
             .works-slider
-              .slide.slide-down
+              .slider
+                  .slider-display
+                    ul.slider-list
+                      li.slider-item.active
+                        | 1
+                      li.slider-item
+                        | 2
+                      li.slider-item
+                        | 3
+                      li.slider-item
+                        | 4
+              .under-slide.under-slide-down
+              .slide.slide-down.slider-controls-bottom
                 .slide-arrow-svg
                     a(href="#")
                         svg.svg-portf_arrow_down-dims
                             title Portf-arrow-down
                             use(xlink:href="assets/img/svg-sprite.svg#portf_arrow_down")
-              .slide.slide-up
+              .under-slide.under-slide-up
+              .slide.slide-up.slider-controls-top
                 .slide-arrow-svg
                     a(href="#")
                         svg.svg-portf_arrow_up-dims
